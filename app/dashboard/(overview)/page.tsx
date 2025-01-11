@@ -1,6 +1,6 @@
-import RevenueChart from '../ui/dashboard/revenue-chart';
-import LatestInvoices from '../ui/dashboard/latest-invoices';
-import { Card } from '../ui/dashboard/cards';
+import RevenueChart from '../../ui/dashboard/revenue-chart';
+import LatestInvoices from '../../ui/dashboard/latest-invoices';
+import { Card } from '../../ui/dashboard/cards';
 import { lusitana } from '@/app/ui/fonts';
 import { fetchRevenue } from '@/app/lib/data';
 import { fetchLatestInvoices } from '@/app/lib/data';
