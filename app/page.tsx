@@ -3,11 +3,11 @@ import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Image from 'next/image';
-import { MainButton } from '@twa-dev/sdk/react';
 import { useRouter } from 'next/navigation';
+import dynamic from 'next/dynamic';
 export default function Page() {
   const router = useRouter();
-
+  const MainButton = dynamic(() => import('@twa-dev/sdk/react').then((mod) => mod.MainButton), { ssr: false });
   return (
     <main className="flex min-h-screen flex-col p-6">
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
